@@ -34,11 +34,11 @@ const ProviderPage = ({params}: {params: Promise<{ slug: string}>}) => {
     }
 
     return (
-        <div className="min-h-screen bg-gray-100 text-gray-800 p-10">
+        <div className="min-h-screen bg-gray-100 text-gray-800 p-10 flex flex-col items-center text-center rounded-2xl">
             <h1 className="text-3xl font-bold mb-4 capitalize">{slug}</h1>
             <p className="mb-8 text-lg">{providerInfo}</p>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
                 {providerPackages.length > 0 ? (
                     providerPackages.map((pkg) => (
                         <InternetCard key={pkg.id} data={pkg} onClick={() => setSelected(pkg)}/>

@@ -18,7 +18,7 @@ const ComparePage = () => {
     };
 
     return (
-        <main className="p-10 min-h-screen bg-white">
+        <main className="p-10 min-h-screen bg-white justify-center items-center text-black rounded-2xl">
         <h1 className="text-3xl font-bold mb-6">Chọn các gói để so sánh</h1>
 
         {/* So sánh nếu có ít nhất 2 gói */}
@@ -30,7 +30,7 @@ const ComparePage = () => {
         )}
 
         {/* Card hiển thị */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12 mt-5 justify-items-center">
             {internetPackages.map((pkg) => (
             <InternetCard key={pkg.id} data={pkg} onClick={toggleSelect} />
             ))}

@@ -23,6 +23,7 @@ export const internetPackages: InternetPackage[] = [
     speed: "100 Mbps",
     call: "250 phút",
     url: "https://vietteltelecom.vn/5gv3",
+    note: "Nhắn tin theo cú pháp 5GV3 gửi 191",
   },
   {
     id: "ST150K",
@@ -120,5 +121,16 @@ export const internetPackages: InternetPackage[] = [
     speed: "Tối đa 20 Mbps",
     call: "Không bao gồm phút gọi",
     url: "https://vnpt.vn/max100",
+  },
+  {
+    id: "MAX200",
+    name: "MAX200",
+    provider: "VNPT",
+    price: 200000,
+    duration: "30 ngày",
+    data: "100 GB",
+    speed: "Tối đa 20 Mbps",
+    call: "Không bao gồm phút gọi",
+    url: "https://vnpt.vn/max200",
   },
 ];
