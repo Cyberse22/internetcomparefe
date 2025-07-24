@@ -31,7 +31,7 @@ const Navbar = () => {
         </div>
 
         {/* DESKTOP MENU */}
-        <ul className="hidden md:flex space-x-8 text-sm font-semibold text-gray-600 text-2xl">
+        <ul className="hidden md:flex space-x-8 text-2xl font-semibold text-gray-600">
             {navLinks.map((link) => (
             <li key={link.href}>
                 <Link
