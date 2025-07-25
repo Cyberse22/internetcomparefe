@@ -31,7 +31,7 @@ export default function RootLayout({
       >
         <Navbar/> 
 
-        <main className="container mx-auto p-4 rounded-2xl">
+        <main className="container mx-auto p-4">
           {children}
         </main>
 

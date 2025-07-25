@@ -10,16 +10,16 @@ interface CardProps {
 const InternetCard = ({data, onClick}: CardProps) => {
 
   return (
-    <div className="w-[300px] h-[400px] bg-white shadow-md rounded-xl p-5 border hover:shadow-xl transition cursor-pointer" 
+    <div className="w-[300px] h-[400px] bg-white/80 shadow-md rounded-xl p-5 border-2 border-cyan-300 hover:shadow-xl transition cursor-pointer flex flex-col items-center justify-between text-center" 
       onClick={() => onClick(data)}
     >
       <h2 className="text-2xl font-bold mb-4 text-gray-800">Internet Card</h2>
       <p className="text-gray-600">{data.provider}</p>
-      <p className="text-lg font-semibold mt-2">{data.name}</p>
-      <p className="text-gray-500 mt-1">Price: {data.price.toLocaleString()} VND</p>
-      <p className="text-gray-500 mt-1">Duration: {data.duration}</p>
-      <p className="text-gray-500 mt-1">Data: {data.data}</p>
-      <p className="text-gray-500 mt-1">Call: {data.call}</p>
+      <p className="text-lg font-semibold">{data.name}</p>
+      <p className="text-gray-500">Price: {data.price.toLocaleString()} VND</p>
+      <p className="text-gray-500">Duration: {data.duration}</p>
+      <p className="text-gray-500">Data: {data.data}</p>
+      <p className="text-gray-500">Call: {data.call}</p>
     </div>
   );
 }

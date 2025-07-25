@@ -18,10 +18,9 @@ const ComparePage = () => {
     };
 
     return (
-        <main className="p-10 min-h-screen bg-white justify-center items-center text-black rounded-2xl">
-        <h1 className="text-3xl font-bold mb-6">Chọn các gói để so sánh</h1>
+        <main className="p-10 min-h-screen bg-black justify-center items-center text-white rounded-2xl">
+        <h1 className="text-3xl font-bold mb-6">Nhấn chọn các gói để so sánh</h1>
 
-        {/* So sánh nếu có ít nhất 2 gói */}
         {selected.length >= 2 && (
             <>
             <h2 className="text-2xl font-bold mb-4">So sánh các gói đã chọn</h2>
